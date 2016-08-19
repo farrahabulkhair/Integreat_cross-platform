@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="Hello.Events"
+		Title="Events" Icon="Calendar_tab.png">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Name="Integreat" Order="Primary"/>
+		<ToolbarItem Name="                                    " Order="Primary"/>
+		<ToolbarItem Order="Primary" Icon="language_icon.png"/>
+		<ToolbarItem Order="Primary" Icon="search_icon.png"/>
+	</ContentPage.ToolbarItems>
+
+	
+	<ContentPage.Content>
+		<StackLayout Padding="30" Spacing="10" x:Name="layout" BackgroundColor="#f1f1f1">
+			<Image Source="events.png" VerticalOptions="Start"
+	        HorizontalOptions="FillAndExpand" HeightRequest="120"/>
+			<Button Text="Events" TextColor="Black" VerticalOptions="Start"
+	        HorizontalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+            <BoxView HeightRequest="2" WidthRequest="0.8" BackgroundColor="#FBDA17"/>
+            <Frame HasShadow="true" HorizontalOptions="FillAndExpand">
+				<Frame.Content >
+					<StackLayout>
+						<Label Text="World Cultures Meeting" FontSize="20" FontAttributes="Bold"/>
+						<BoxView HeightRequest="2" WidthRequest="0.8" BackgroundColor="#FBDA17"/>
+
+						<Grid>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="50"/>
+								<RowDefinition Height="1"/>
+								<RowDefinition Height="50"/>
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="25"/>
+								<ColumnDefinition Width="246"/>
+							</Grid.ColumnDefinitions>
+
+							<Image Source="icons_subcategories.png" Grid.Row="0" Grid.Column="0" TranslationY="-2"  />
+							<Label Text="Weltraum, Bad Tolz - Vichyplatz 1" Grid.Row="0" Grid.Column="1" TextColor="#585858" YAlign="Center"/>
+							<BoxView HeightRequest="1" BackgroundColor="#FBDA17" Grid.Row="1" Grid.Column="1"/>
+							<Image Source="icons_subcategories_hours.png" Grid.Row="2" Grid.Column="0" TranslationY="-2"/>
+							<Label Text="Fridays, 5pm" TextColor="#585858" Grid.Row="2" Grid.Column="1" YAlign="Center"/>
+						</Grid>
+					</StackLayout>
+				</Frame.Content>
+				
+			</Frame>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

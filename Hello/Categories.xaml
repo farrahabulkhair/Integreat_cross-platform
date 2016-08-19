@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="Hello.Categories"
+		Title="Categories" Icon="List_icon.png">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Name="Integreat" Order="Primary"/>
+		<ToolbarItem Name="                                    " Order="Primary"/>
+		<ToolbarItem Order="Primary" Icon="language_icon.png"/>
+		<ToolbarItem Order="Primary" Icon="search_icon.png"/>
+	</ContentPage.ToolbarItems>
+
+	<ContentPage.Content>
+		<StackLayout Padding="16" Spacing="20" x:Name="layout" BackgroundColor="#f1f1f1">
+			<Label Text="Select a category" XAlign="Center" FontSize="25"></Label>
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="100" />
+					<RowDefinition Height="20" />
+					<RowDefinition Height="100" />
+					<RowDefinition Height="20" />
+					<RowDefinition Height="100" />
+					<RowDefinition Height="20" />
+					<RowDefinition Height="100" />
+					<RowDefinition Height="20" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+					<Button Image="firststeps.png" Grid.Row="0" Grid.Column="0" WidthRequest="100" HorizontalOptions="FillAndExpand"/>
+					<Label Text="First Steps" Grid.Row="1" Grid.Column="0" XAlign="Center" />
+					<Button Image="languagecat.png" Grid.Row="0" Grid.Column="1" WidthRequest="100" HorizontalOptions="FillAndExpand"/>
+					<Label Text="Language" Grid.Row="1" Grid.Column="1" XAlign="Center" />
+					<Button Image="workeducation.png" Grid.Row="2" Grid.Column="0" WidthRequest="100" HorizontalOptions="FillAndExpand"/>
+					<Label Text="Work and education" Grid.Row="3" Grid.Column="0" XAlign="Center" />
+					<Button Image="family.png" Grid.Row="2" Grid.Column="1" WidthRequest="100" HorizontalOptions="FillAndExpand"/>	
+					<Label Text="Family" Grid.Row="3" Grid.Column="1" XAlign="Center" />
+					<Button Image="health.png" Grid.Row="4" Grid.Column="0" WidthRequest="100" HorizontalOptions="FillAndExpand"/>
+					<Label Text="Health" Grid.Row="5" Grid.Column="0" XAlign="Center" />
+					<Button Image="everydaylife.png" Grid.Row="4" Grid.Column="1" WidthRequest="100" HorizontalOptions="FillAndExpand"/>
+					<Label Text="Everyday life" Grid.Row="5" Grid.Column="1" XAlign="Center" />
+			</Grid>
+
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

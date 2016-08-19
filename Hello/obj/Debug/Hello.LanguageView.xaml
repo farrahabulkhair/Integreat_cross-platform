@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="Hello.LanguageView"  BackgroundColor="#fafafa">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Name="#CityName" Order="Primary"/>
+		<ToolbarItem Name="                                    " Order="Primary"/>
+		<ToolbarItem Order="Primary" Icon="language_icon.png"/>
+		<ToolbarItem Order="Primary" Icon="search_icon.png"/>
+	</ContentPage.ToolbarItems>
+
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Spacing="5" Padding="20" x:Name="layout">
+				
+					<Image Source="language.png" VerticalOptions="Start"
+			        HorizontalOptions="FillAndExpand" HeightRequest="120"/>
+					<Button Text="Language" TextColor="Black" VerticalOptions="Start"
+			        HorizontalOptions="Center" />
+	                <BoxView HeightRequest="1" WidthRequest="0.8" BackgroundColor="#FBDA17"/>
+		        
+
+				<Grid>
+					<Grid.RowDefinitions>
+			          <RowDefinition Height="110" />
+			          <RowDefinition Height="30" />
+			          <RowDefinition Height="90" />
+					  <RowDefinition Height="30" />
+					  <RowDefinition Height="90" />
+					  <RowDefinition Height="30" />
+			       </Grid.RowDefinitions>
+
+			       <Grid.ColumnDefinitions>
+			          <ColumnDefinition Width="*" />
+			          <ColumnDefinition Width="*" />
+			       </Grid.ColumnDefinitions>
+					<Button Image="german.png" Grid.Row="0" Grid.Column="0" />
+					<Label Text="Deutsch" Grid.Row="1" Grid.Column="0" XAlign="Center" />
+					
+					<Button Image="arabic.png" Grid.Row="0" Grid.Column="1" />
+					<Label Text="عربي" Grid.Row="1" Grid.Column="1" XAlign="Center" />
+					
+					<Button Image="gb.png" Grid.Row="2" Grid.Column="0"/>
+					<Label Text="English" Grid.Row="3" Grid.Column="0" XAlign="Center" />
+					
+					<Button Image="farsi.png" Grid.Row="2" Grid.Column="1"/>	
+					<Label Text="فارسي" Grid.Row="3" Grid.Column="1" XAlign="Center" />
+					
+					<Button Image="french.png" Grid.Row="4" Grid.Column="0"/>
+					<Label Text="French" Grid.Row="5" Grid.Column="0" XAlign="Center" />
+				</Grid>
+
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

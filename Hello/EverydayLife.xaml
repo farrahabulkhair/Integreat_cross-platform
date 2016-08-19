@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Hello.EverydayLife">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Name="Augsburg" Order="Primary"/>
+		<ToolbarItem Name="                                    " Order="Primary"/>
+		<ToolbarItem Order="Primary" Icon="language_icon.png"/>
+		<ToolbarItem Order="Primary" Icon="search_icon.png"/>
+	</ContentPage.ToolbarItems>
+
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Padding="30" Spacing="10" BackgroundColor="#f1f1f1">
+				<Image Source="everydaylife.png"/>
+				<Button Text="Everyday life" TextColor="Black" VerticalOptions="Start"
+		        HorizontalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+	            <BoxView HeightRequest="2" WidthRequest="0.8" BackgroundColor="#FBDA17"/>
+
+				<Frame HasShadow="true" HorizontalOptions="FillAndExpand">
+					<Frame.Content>
+						<Grid>
+								<Grid.RowDefinitions>
+									<RowDefinition Height="40"/>
+									<RowDefinition Height="1"/>
+									<RowDefinition Height="40"/>
+									<RowDefinition Height="1"/>
+									<RowDefinition Height="40"/>
+									<RowDefinition Height="1"/>
+									<RowDefinition Height="40"/>
+								</Grid.RowDefinitions>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="30"/>
+									<ColumnDefinition Width="246"/>
+								</Grid.ColumnDefinitions>
+
+							<Image Source="bank_icon.png" Grid.Row="0" Grid.Column="0" TranslationY="1" HorizontalOptions="Center" VerticalOptions="Center"/>
+							<Label Text="Banks and Insurances" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" FontSize="22" VerticalOptions="Center"/>
+							<BoxView HeightRequest="2" BackgroundColor="#FBDA17" Grid.Row="1" Grid.Column="1" VerticalOptions="Center"/>
+							<Label Text="Current Account" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" TextColor="#585858"/>
+							<Image Source="forw_arrow.png" Grid.Row="2" Grid.Column="1" HorizontalOptions="End"/>
+							<BoxView HeightRequest="1" BackgroundColor="#FBDA17" Grid.Row="3" Grid.Column="1" VerticalOptions="Center"/>
+							<Label Text="Liability Insurance" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" TextColor="#585858"/>
+							<Image Source="forw_arrow.png" Grid.Row="4" Grid.Column="1" HorizontalOptions="End"/>
+							<BoxView HeightRequest="1" BackgroundColor="#FBDA17" Grid.Row="5" Grid.Column="1" VerticalOptions="Center"/>
+							<Label Text="Banks and insurances" Grid.Row="6" Grid.Column="1" VerticalOptions="Center" TextColor="#585858"/>
+							<Image Source="forw_arrow.png" Grid.Row="6" Grid.Column="1" HorizontalOptions="End"/>
+						</Grid>
+					</Frame.Content>
+				</Frame>
+
+				<Frame HasShadow="true" HorizontalOptions="FillAndExpand">
+					<Frame.Content>
+						<Grid>
+								<Grid.RowDefinitions>
+									<RowDefinition Height="40"/>
+									<RowDefinition Height="1"/>
+									<RowDefinition Height="40"/>
+									<RowDefinition Height="1"/>
+									<RowDefinition Height="40"/>
+									<RowDefinition Height="1"/>
+									<RowDefinition Height="40"/>
+								</Grid.RowDefinitions>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="30"/>
+									<ColumnDefinition Width="246"/>
+								</Grid.ColumnDefinitions>
+
+							<Image Source="icons_communication.png" Grid.Row="0" Grid.Column="0" TranslationY="1" HorizontalOptions="Center" VerticalOptions="Center"/>
+							<Label Text="Communication" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" FontSize="22" VerticalOptions="Center"/>
+							<BoxView HeightRequest="2" BackgroundColor="#FBDA17" Grid.Row="1" Grid.Column="1" VerticalOptions="Center"/>
+							<Label Text="Internet" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" TextColor="#585858"/>
+							<Image Source="forw_arrow.png" Grid.Row="2" Grid.Column="1" HorizontalOptions="End"/>
+							<BoxView HeightRequest="1" BackgroundColor="#FBDA17" Grid.Row="3" Grid.Column="1" VerticalOptions="Center"/>
+							<Label Text="Telecommunications" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" TextColor="#585858"/>
+							<Image Source="forw_arrow.png" Grid.Row="4" Grid.Column="1" HorizontalOptions="End"/>
+							<BoxView HeightRequest="1" BackgroundColor="#FBDA17" Grid.Row="5" Grid.Column="1" VerticalOptions="Center"/>
+							<Label Text="Connectivity" Grid.Row="6" Grid.Column="1" VerticalOptions="Center" TextColor="#585858"/>
+							<Image Source="forw_arrow.png" Grid.Row="6" Grid.Column="1" HorizontalOptions="End"/>
+						</Grid>
+					</Frame.Content>
+				</Frame>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

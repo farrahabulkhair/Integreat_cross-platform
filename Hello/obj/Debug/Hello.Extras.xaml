@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="Hello.Extras"
+		Title="Extras" Icon="Plus_tab.png">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Name="Integreat" Order="Primary"/>
+		<ToolbarItem Name="                                    " Order="Primary"/>
+		<ToolbarItem Order="Primary" Icon="language_icon.png"/>
+		<ToolbarItem Order="Primary" Icon="search_icon.png"/>
+	</ContentPage.ToolbarItems>
+	
+	<ContentPage.Content>
+		<StackLayout Padding="25" Spacing="20" x:Name="layout" BackgroundColor="#f1f1f1">
+			<Label Text="Extras" XAlign="Center" FontSize="25"></Label>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

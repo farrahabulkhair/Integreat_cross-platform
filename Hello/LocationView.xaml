@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="Hello.LocationView"
+		>
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Name="Integreat" Order="Primary"/>
+		<ToolbarItem Name="                                    " Order="Primary"/>
+		<ToolbarItem Order="Primary" Icon="language_icon.png"/>
+		<ToolbarItem Order="Primary" Icon="search_icon.png"/>
+	</ContentPage.ToolbarItems>
+	
+	<ContentPage.Content>
+		<ScrollView BackgroundColor="#f1f1f1"> 
+			<StackLayout Spacing="5" Padding="20" x:Name="layout" BackgroundColor="#f1f1f1">
+				<Image Source="location.png" VerticalOptions="Start"
+		        HorizontalOptions="FillAndExpand" HeightRequest="120" />
+				<Button Text="Cities" TextColor="Black" VerticalOptions="Start"
+		        HorizontalOptions="Center" />
+				
+	                <BoxView HeightRequest="1" WidthRequest="0.8" BackgroundColor="#FBDA17"/>
+		       
+
+				<Grid>
+					<Grid.RowDefinitions>
+			          <RowDefinition Height="90" />
+			          <RowDefinition Height="30" />
+			          <RowDefinition Height="90" />
+					  <RowDefinition Height="30" />
+					  <RowDefinition Height="90" />
+					  <RowDefinition Height="30" />
+				   	  <RowDefinition Height="90" />
+					  <RowDefinition Height="30" />
+			       </Grid.RowDefinitions>
+
+			       <Grid.ColumnDefinitions>
+			          <ColumnDefinition Width="*" />
+			          <ColumnDefinition Width="*" />
+			       </Grid.ColumnDefinitions>
+					<Button Image="ahaus.png" Grid.Row="0" Grid.Column="0"/>
+					<Label Text="Ahaus" Grid.Row="1" Grid.Column="0" XAlign="Center" />
+					<Button Image="augsburg.png" Grid.Row="0" Grid.Column="1" />
+					<Label Text="Augsburg" Grid.Row="1" Grid.Column="1" XAlign="Center" />
+					<Button Image="badtoelz.png" Grid.Row="2" Grid.Column="0"/>
+					<Label Text="Bad Tolz" Grid.Row="3" Grid.Column="0" XAlign="Center" />
+					<Button Image="dormagen.png" Grid.Row="2" Grid.Column="1"/>	
+					<Label Text="Dormagen" Grid.Row="3" Grid.Column="1" XAlign="Center" />
+					<Button Image="kissing.png" Grid.Row="4" Grid.Column="0"/>
+					<Label Text="Kissing" Grid.Row="5" Grid.Column="0" XAlign="Center" />
+					<Button Image="germersheim.png" Grid.Row="4" Grid.Column="1"/>
+					<Label Text="Germersheim" Grid.Row="5" Grid.Column="1" XAlign="Center" />
+					<Button Image="mtk.png" Grid.Row="6" Grid.Column="0"/>
+					<Label Text="MTK" Grid.Row="7" Grid.Column="0" XAlign="Center" />
+				</Grid>
+
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

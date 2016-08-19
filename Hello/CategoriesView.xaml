@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Hello.CategoriesView">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Name="#CityName" Order="Primary"/>
+		<ToolbarItem Name="                                    " Order="Primary"/>
+		<ToolbarItem Order="Primary" Icon="language_icon.png"/>
+		<ToolbarItem Order="Primary" Icon="search_icon.png"/>
+
+	</ContentPage.ToolbarItems>
+
+	<ContentPage.Content>
+
+		
+	</ContentPage.Content>
+</ContentPage>
